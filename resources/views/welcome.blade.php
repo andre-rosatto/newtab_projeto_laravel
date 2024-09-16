@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Newtab: Projeto de Laravel</title>
+  <script src="{{ asset('test.js') }}"></script>
 </head>
 
 <body>

@@ -16,7 +16,7 @@ return new class extends Migration
 			$table->string('empresa');
 			$table->string('titulo');
 			$table->string('descricao');
-			$table->char('localizacao');
+			$table->enum('localizacao', ['A', 'B', 'C', 'D', 'E', 'F']);
 			$table->tinyInteger('nivel');
 			$table->timestamps();
 		});
