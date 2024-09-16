@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\v1\CandidaturaController;
 use App\Http\Controllers\API\v1\VagaController;
 use App\Http\Controllers\API\v1\PessoaController;
 use Illuminate\Http\Request;
@@ -13,6 +14,10 @@ Route::prefix('v1')->group(function () {
 	// pessoas
 	Route::get('/pessoas', [PessoaController::class, 'index']);
 	Route::post('/pessoas', [PessoaController::class, 'store']);
+
+	// candidaturas
+	Route::get('/candidaturas', [CandidaturaController::class, 'index']);
+	Route::post('/candidaturas', [CandidaturaController::class, 'store']);
 });
 
 Route::get('/user', function (Request $request) {
