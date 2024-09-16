@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Pessoa;
 use App\Models\User;
 use App\Models\Vaga;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -15,6 +16,8 @@ class DatabaseSeeder extends Seeder
 	public function run(): void
 	{
 		Vaga::factory(20)->create();
+		Pessoa::factory(20)->create();
+
 		// User::factory(10)->create();
 
 		// User::factory()->create([
