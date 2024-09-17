@@ -32,7 +32,7 @@ class RankingController extends Controller
 					CONCAT(cte.path, paths.destination) AS path
 						FROM cte
 						INNER JOIN paths ON paths.src = cte.destination
-						WHERE cte.destination != 'F' AND NOT INSTR(cte.path, paths.destination)
+						WHERE NOT INSTR(cte.path, paths.destination)
 			)
 
 			SELECT
